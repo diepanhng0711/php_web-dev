@@ -25,7 +25,5 @@
     </form>
 
     <?PHP phpinfo(); ?>
-    
-    
 </body>
 </html>

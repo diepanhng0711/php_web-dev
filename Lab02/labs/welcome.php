@@ -21,22 +21,22 @@
 
         // print_r($_POST);
 
-        print("<br>Your name is $name");
+        print("Your name is $name");
         print("<br>Your class is $class");
-        print("<br>Your uni is $uni");
+        print("<br>Your univerisity is $uni");
         print("<br>Your height is $height");
         print("<br>Your weight is $weight");
         print("<br>Your year is $year");
         print("<br>Your month is $month");
         print("<br>Your day is $day");
-        print("<br>Your hobby is: <br>");
+        print("<br>Your hobby is:");
         print("<ul>");
         foreach($_POST["hobby"] as $value) {
             print("<li>$value</li>");
         }
         print("</ul>");
 
-        print("<br>Your color is $color");
+        print("Your favorite color is $color");
     ?>
 </body>
 </html>

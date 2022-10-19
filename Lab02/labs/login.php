@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="./welcome.php" method="POST">
+        <span style="font-style: italic; font-size:18px">Enter your name:</span>
+        <br>
+        <input type="text" name="name" size="32" maxlength="40" style="font-size: 16px;">
+        <hr>
+
+        <span style="font-style: italic; font-size:18px">Enter your class:</span>
+        <br>
+        <input type="text" name="class" size="32" maxlength="40" style="font-size: 16px;">
+        <hr>
+
+        <span style="font-style: italic; font-size:18px">Enter your university:</span>
+        <br>
+        <input type="text" name="uni" size="32" maxlength="60" style="font-size: 16px;">
+        <hr>
+
+        <span style="font-style: italic; font-size:18px">Height:</span>
+        <input type="text" name="height" size="4" maxlength="4" style="font-size: 16px;">
+
+        <span style="margin-left: 27px; font-style:italic; font-size:18px">Weight:</span>
+        <input type="text" name="weight" size="4" maxlength="4" style="font-size: 16px;">
+        <hr>
+
+        <span style="font-style: italic; font-size:18px">D.O.B (Date of Birth)</span>
+        <br>
+        <label for="year" style="font-style: italic; font-size:18px">Year</label>
+        <select name="year" id="year">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+        </select>
+
+        <label for="month" style="font-style: italic; font-size:18px; margin-left: 18px">Month</label>
+        <select name="month" id="month">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <label for="day" style="font-style: italic; font-size:18px; margin-left: 18px">Day</label>
+        <select name="day" id="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <hr>
+
+        <span style="font-style: italic; font-size:18px">Your hobbies</span>
+        <br>
+        <br>
+        <input type="checkbox" name="hobby[]" value="Reading">Reading
+        <input type="checkbox" name="hobby[]" value="Writing">Writing
+        <input type="checkbox" name="hobby[]" value="Drawing">Drawing
+        <input type="checkbox" name="hobby[]" value="Singing">Singing
+        <input type="checkbox" name="hobby[]" value="Dancing">Dancing
+        <input type="checkbox" name="hobby[]" value="Playing">Playing Sports
+        <input type="checkbox" name="hobby[]" value="Travelling">Travelling
+        <input type="checkbox" name="hobby[]" value="Cooking">Cooking
+        <input type="checkbox" name="hobby[]" value="Gardening">Gardening
+        <input type="checkbox" name="hobby[]" value="Watching">Watching Movies
+        <input type="checkbox" name="hobby[]" value="Listening">Listening to Music
+        <input type="checkbox" name="hobby[]" value="Gaming">Playing Games
+        <input type="checkbox" name="hobby[]" value="Coding">Coding
+        <input type="checkbox" name="hobby[]" value="Others">Others
+        <hr>
+
+        <span style="font-style: italic; font-size:18px">Your favourite colour</span>
+        <br>
+        <br>
+        <input type="radio" name="color" value="Red">Red
+        <input type="radio" name="color" value="Blue">Blue
+        <input type="radio" name="color" value="Green">Green
+        <input type="radio" name="color" value="Yellow">Yellow
+        <input type="radio" name="color" value="Orange">Orange
+        <input type="radio" name="color" value="Purple">Purple
+        <input type="radio" name="color" value="Pink">Pink
+        <input type="radio" name="color" value="Black">Black
+        <input type="radio" name="color" value="White">White
+        <input type="radio" name="color" value="Brown">Brown
+        <input type="radio" name="color" value="Grey">Grey
+        <input type="radio" name="color" value="Others">Others
+        <hr>
+
+        <input type="submit" value="Click to Submit">
+        <input type="reset" value="Erase and Restart">
+
+        
+    </form>
+</body>
+
+</html>

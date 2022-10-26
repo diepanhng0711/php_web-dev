@@ -1,0 +1,29 @@
+.info {
+    width: 250px;
+}
+
+.info .info__field {
+    display: flex;
+    margin: 5px 0;
+}
+
+/* .info .info__field-text-input {
+    
+} */
+
+.info__field-selection-bar {
+    display: inline-flex;
+    text-align: left;
+}
+
+.info__field-selection {
+    margin: 0 5px;
+}
+
+.info__field-selection:first-child {
+    margin-left: 0;
+}
+
+.info__field-selection:last-child {
+    margin-right: 0;
+}

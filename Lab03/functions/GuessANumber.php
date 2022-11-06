@@ -13,5 +13,17 @@
         <input type="text" name="guess" id="guess">
         <input type="submit" value="Guess">
     </form>
+
+    <?php
+    if(isset($_POST['guess'])) {
+        $randomedNumber = rand(1, 100);
+        $guessedNumber = $_POST['guess'];
+        if ($guessedNumber == $randomedNumber) {
+            echo "<p style=\"color: blue\">You won!</p>";
+        } else {
+            echo "<p style=\"color: red\">You lose!</p>";
+        }
+    }   
+    ?>
 </body>
 </html>

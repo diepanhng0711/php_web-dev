@@ -11,29 +11,14 @@
         $server = 'localhost';
         $user = 'root';
         $pass = 'mysql';
-        $mydb = 'mydatabase';
-        $table_name = 'products';
+        $mydb = 'mydatabase';   
+        $table_name = 'products2';
         $connect = mysqli_connect($server, $user, $pass);
 
         if (!$connect) {
             die("Cannot connect to $server using $user");
         } else {
-            $SQLcmd = "CREATE TABLE $table_name (
-                            ProductID INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-                            Product_desc VARCHAR(50),
-                            Cost INT,
-                            Weight INT,
-                            Numb INT
-            )";
-        }
-
-        mysqli_select_db($connect, $mydb);
-        if(mysqli_query($connect, $SQLcmd)) {
-            print '<p style="color:blue">Created table</p>';
-            print "<i>$table_name</i> in database<i>$mydb</i><br>";
-            print "<br>SQLcmd=$SQLcmd";
-        } else {
-            die("Table create creation failed SQL=$SQLcmd");
+            
         }
 
         mysqli_close($connect);

@@ -75,5 +75,4 @@ while ($row = mysqli_fetch_array($results)) {
         </tr>
     </table>
 </body>
-
 </html>

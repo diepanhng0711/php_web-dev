@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 360px;
+    height: 199px;
+    align-items: center;
+}
+
+.ele_first {
+    background: url(https://mpng.subpng.com/20180329/vpq/kisspng-blackboard-classroom-dry-erase-boards-bulletin-boa-board-5abd0e0115c266.5163653515223393290891.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    margin: 0.25in;
+    border: 0.25in solid black;
+    padding: 0.25in;
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.4)), url(https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366__480.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.4)), url(https://static.vecteezy.com/system/resources/previews/007/995/476/original/brick-wall-background-seamless-texture-pattern-illustration-free-vector.jpg);
+    display: flex;
+}
+
+.banner {
+    background: url() repeat-x;
+    font-size: 50pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -62,6 +62,7 @@
                 print "<br> Invalid URL address=$url <br>";
             }
 
+
             //VALIDATE PHONE NUMBER
             $phone_pattern = '/^[0][0-9]{9}$/';
             if (preg_match($phone_pattern, $phone)) {
